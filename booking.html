@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Form</title>
+  </head>
+
+  <header>
+    <h1>Grand Core2Dine Hotel- Booking</h1>
+    <h3>Complete the form below to reserve your room.</h3>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a> | <a href="rooms.html">Rooms</a> |
+    <a href="room-comparison.html">Compare Rooms</a> |
+    <a href="booking.html">Booking</a> |
+    <a href="restaurant.html">Restaurant</a> |
+    <a href="gallery.html">Gallery</a> |
+    <a href="media.html">Media</a>|
+    <a href="contact.html">Contact us</a>
+  </nav>
+  <hr>
+
+<h2>Hotel Booking Form</h2>
+
+<p>Please provide the required information to complete your hotel reservation.</p>
+
+<form>
+
+    <fieldset>
+        <legend>Guest Information</legend>
+
+        <label for="name">Full Name:</label><br>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+        <br><br>
+
+        <label for="email">Email Address:</label><br>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+        <br><br>
+
+        <label for="phone">Phone Number:</label><br>
+        <input type="tel" id="phone" name="phone" placeholder="Enter 10-digit phone number" pattern="[0-9]{10}" required>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Stay Details</legend>
+
+        <label for="checkin">Check-in Date:</label><br>
+        <input type="date" id="checkin" name="checkin" required>
+        <br><br>
+
+        <label for="checkout">Check-out Date:</label><br>
+        <input type="date" id="checkout" name="checkout" required>
+        <br><br>
+
+        <label for="guests">Number of Guests:</label><br>
+        <input type="number" id="guests" name="guests" min="1" max="10" value="1" required>
+        <br><br>
+
+        <label for="room">Room Type:</label><br>
+        <select id="room" name="room" required>
+            <option value="">-- Select Room Type --</option>
+            <option>Standard Room</option>
+            <option>Deluxe Room</option>
+            <option>Executive Room</option>
+            <option>Family Suite</option>
+            <option>Presidential Suite</option>
+        </select>
+        <br><br>
+
+        <label for="rooms">Number of Rooms:</label><br>
+        <input type="number" id="rooms" name="rooms" min="1" value="1" required>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Meal Preference</legend>
+
+        <p>Select your meal preference:</p>
+
+        <input type="radio" id="vegetarian" name="meal" value="Vegetarian">
+        <label for="vegetarian">Vegetarian</label>
+        <br>
+
+        <input type="radio" id="nonveg" name="meal" value="Non-Vegetarian">
+        <label for="nonveg">Non-Vegetarian</label>
+        <br>
+
+        <input type="radio" id="vegan" name="meal" value="Vegan">
+        <label for="vegan">Vegan</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Airport Pickup</legend>
+
+        <p>Do you require airport pickup?</p>
+
+        <input type="radio" id="pickupYes" name="pickup" value="Yes">
+        <label for="pickupYes">Yes</label>
+
+        <input type="radio" id="pickupNo" name="pickup" value="No">
+        <label for="pickupNo">No</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Additional Information</legend>
+
+        <label for="requests">Special Requests:</label><br>
+        <textarea id="requests" name="requests" rows="5" cols="50" placeholder="Enter any special requests..."></textarea>
+        <br><br>
+
+        <label for="proof">ID Proof Upload:</label><br>
+        <input type="file" id="proof" name="proof" accept="image/*,.pdf">
+        <br><br>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the hotel terms and conditions.</label>
+    </fieldset>
+
+    <br>
+
+    <fieldset>
+        <legend>Submit Booking</legend>
+
+        <button type="submit">Submit Booking</button>
+        <button type="reset">Reset Form</button>
+    </fieldset>
+
+</form>
+
+  <hr>
+  <footer>&copy;2026 Grand Core@Dine Hotel. All rights reserved.</footer>
+</html>
